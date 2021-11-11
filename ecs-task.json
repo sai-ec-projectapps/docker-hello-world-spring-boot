@@ -1,0 +1,25 @@
+{
+	"family": "demo",
+	"networkMode": "awsvpc",
+	"containerDefinitions": [
+		{
+		"name": "myapp",
+		"image": "public.ecr.aws/q3y5h7a9/sai:latest",
+		"portMappings": [
+			{
+			"containerPort": 8080,
+			"hostPort": 8080,
+			"protocol": "tcp"
+		}
+		],
+		"essential": true
+
+	}
+	],
+	"requiresCompatibilities": [
+		"FARGATE"
+	],
+	"cpu": "256",
+	"memory": "512"
+	
+}
