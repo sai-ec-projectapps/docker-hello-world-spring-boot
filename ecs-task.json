@@ -1,5 +1,5 @@
 {
-	"family": "demo",
+	"family": "ecsdemo",
 	"networkMode": "awsvpc",
 	"containerDefinitions": [
 		{
